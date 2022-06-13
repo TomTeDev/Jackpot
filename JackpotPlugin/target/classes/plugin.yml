@@ -1,0 +1,12 @@
+name: JackPotPlugin
+version: 1.0-SNAPSHOT
+main: jackpot.lotteries.Lotteries
+api-version: 1.17
+prefix: Lotteries
+softdepend:  [Vault,Essentials]
+authors: [ MuchoMore#0717 ]
+description: Plugin that allows players to participant in lottery
+website: https://www.mc-market.org/threads/674601/
+commands:
+  lottery:
+

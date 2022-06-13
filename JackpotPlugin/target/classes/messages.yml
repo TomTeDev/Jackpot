@@ -1,0 +1,124 @@
+data:
+  #message sent to player after he use wrong command (typicaly is good to tell him to use /lottery help)
+  path_to_wrong_command_message: 'Wrong command'
+  #message sent to player after he sent some letter instead of number in command that require number
+  path_to_wrong_number_message: 'Wrong number'
+  #messsage sent to player if he has not enough money to do action
+  path_to_not_enough_money_message: 'Not enogh money'
+  #list of messages sent to player if he is not an operator
+  path_to_help_player:
+    - '/lottery'
+    - '/lottery mybets'
+    - '/lottery madman join [tickets_amount]'
+  #list of messages sent to player if he is an op
+  path_to_help_op:
+    - '/lottery reload'
+    - '/lottery madman start'
+    - '/lottery madman stop'
+    - '/lottery madman finish'
+  #main inventory title
+  path_to_main_inv_title: 'Main inventory title'
+  #choose amount inventory title (must be different from main inventory title)
+  path_to_choose_amount_inv_title: 'Choose inventory title'
+  #display name of madman item in main inventory
+  path_to_display_name_madman: 'Display name madman'
+  #display name of disco item in main inventory
+  path_to_display_name_disco: 'Display name disco'
+  #display name of supernova item in main inventory
+  path_to_display_name_supernova: 'Display name supernova'
+  #lore of madman item in main inventory (all of lores can be empty)
+  path_to_lore_madman:
+    - 'Time till end %lottery_madman_time%'
+    - 'You have bought %lottery_madman_current_player_tickets% tickets'
+  #lore of disco item in main inventory
+  path_to_lore_disco:
+    - 'Lore'
+    - 'Lore'
+  #lore of supernova item in main inventory
+  path_to_lore_supernova:
+    - 'Lore'
+    - 'Lore'
+  #display name of item that confirms player purchase
+  path_to_accept_button_display_name: 'Accept'
+  #lore of item that confirms player purchase
+  path_to_accept_button_lore:
+    - '&a You are about to buy %lottery_current_amount% tickets'
+    - '&c For %lottery_current_ticket_prize% $ each'
+  #Display name of item that brings player back to main gui
+  path_to_go_back_button_display_name: 'go back'
+  #lore of item that brings player back to main gui
+  path_to_go_back_button_lore:
+    - 'Lore'
+    - 'Lore'
+  #Display name of book in the middle of "choose amount" gui
+  path_to_book_display_name: 'book name'
+  #lore of book in the middle of "choose amount" gui
+  path_to_book_lore:
+    - 'Lore'
+    - 'Lore'
+  #display name of item that increase amount of tickets player wants to buy (1)
+  path_to_add_small_amount_display_name: 'add 1'
+  #display name of item that increase amount of tickets player wants to buy (5)
+  path_to_add_medium_amount_display_name: 'add 5'
+  #display name of item that increase amount of tickets player wants to buy(50)
+  path_to_add_large_amount_display_name: 'add 50'
+  #lore of item that increase amount of tickets player wants to buy
+  path_to_add_small_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  #lore of item that increase amount of tickets player wants to buy
+  path_to_add_medium_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  #lore of item that increase amount of tickets player wants to buy
+  path_to_add_large_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  #display name of item that decrease amount of tickets player wants to buy(1)
+  path_to_subtract_small_amount_display_name: 'subtract 1'
+  #display name of item that decrease amount of tickets player wants to buy(5)
+  path_to_subtract_medium_amount_display_name: 'subtract 5'
+  #display name of item that decrease amount of tickets player wants to buy(50)
+  path_to_subtract_large_amount_display_name: 'subtract 50'
+  #lore of item that decrease amount of tickets player wants to buy
+  path_to_subtract_small_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  #lore of item that decrease amount of tickets player wants to buy
+  path_to_subtract_medium_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  #lore of item that decrease amount of tickets player wants to buy
+  path_to_subtract_large_amount_lore:
+    - 'Lore'
+    - 'Lore'
+  # head texture visible in "choose amount" gui
+  path_to_add_amount_head_texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19'
+  # head texture visible in "choose amount" gui
+  path_to_subtract_amount_head_texture: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU0YjhiOGQyMzYyYzg2NGUwNjIzMDE0ODdkOTRkMzI3MmE2YjU3MGFmYmY4MGMyYzViMTQ4Yzk1NDU3OWQ0NiJ9fX0='
+  # message sent to player if he is trying to join lottery that is not active right now
+  path_to_lottery_is_not_active_message: 'Lottery is not active now message'
+  #message sent to player if there are not tickets left to be bought
+  path_to_no_tickets_left_message: 'You can not buy any more tickets'
+  #message sent to player after he bought some tickets
+  path_to_message_confirming_player_purchase_tickets: 'Congratulations you have bought some tickets'
+  #messages sent to player containing informations about his current bets
+  path_to_mybets_messages_list:
+    - 'You have some madman tickets'
+    - 'You have some disco tickets'
+
+
+##########  PLACEHOLDERS   ###################
+
+#   %lottery_madman_time% - time left until lottery end
+#   %lottery_madman_top1name% - winner name from past lottery
+#   %lottery_madman_top1cash% - winner prize from past lottery
+#   %lottery_madman_top1tickets% - amount of tickets bought to win past lottery
+#   %lottery_madman_current_player_tickets% - how many tickets does player already bought
+#   %lottery_current_type% - current lottery type (for gui mostly) (will return: "madman" or "disco" or "supernova"
+#   %lottery_current_amount% - amount of tickets that player is about to buy (for gui mostly)
+#   %lottery_current_ticket_prize% - prize of ticket that player is about to buy (for gui mostly)
+#   %lottery_madman_current_all_tickets% - sum of tickets that has been bought by all players in certain lottery
+#   %lottery_madman_ticket_prize% - ticket prize
+
+##########  PLACEHOLDERS   ###################
